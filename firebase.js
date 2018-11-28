@@ -10,8 +10,8 @@ const fs = require('fs');
 var photoNum = 0;
 
 firebase.initializeApp({
-  databaseURL: '<firebaseURLhere>',
-  serviceAccount: './<firebaseSecurityProfile>.json'
+  databaseURL: '<https://my-project-65cba.firebaseio.com/>',
+  serviceAccount: './<my-project-65cba>.json'
 });
 
 /* Local Database Access */
@@ -69,8 +69,8 @@ ref.on("child_changed", function(snap) {
         url: 'https://api.kairos.com/enroll',
         headers:{
           'Content-Type': 'application/json',
-          'app_id': '<KairosAppID>',
-          'app_key': '<KairosAppKey>'
+          'app_id': '<aa429df7>',
+          'app_key': '<5d326d11fbe0c94d291427c2a616fc19>'
         },
         body: JSON.stringify({  
           image: base64data,                            //Uses the previously taken picture of the person's face to train
