@@ -10,8 +10,8 @@ const fs = require('fs');
 var photoNum = 0;
 
 firebase.initializeApp({
-  databaseURL: '<firebaseURLhere>',
-  serviceAccount: './<firebaseSecurityProfile>.json'
+  databaseURL: '<https://my-project-65cba.firebaseio.com/>',
+  serviceAccount: './<my-project-65cba>.json'
 });
 
 /* Local Database Access */
